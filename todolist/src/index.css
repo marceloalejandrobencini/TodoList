@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* styles.css */
+
+/* Estilos para el contenedor principal de la aplicación */
+.App {
+  text-align: center; /* Centrar el contenido */
+}
+
+/* Estilos para el título "TODOS" */
+.App-header h1 {
+  color: #ff69b4; /* Color rosa */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para el contenedor de las tareas */
+.todo-list {
+  max-width: 400px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar horizontalmente */
+  border: 2px solid #ccc; /* Borde gris */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: Rubik;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e4d5c4;
+    color: #333;
+    max-width: 400px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.new-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.btn {
+    background: #007BFF;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background: #0056b3;
+    
+}
+
+.btn.btn-danger {
+    background: #dc3545;
+    font-size: 10px;
+    
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+    background: #c82333;
+}
+
+.new-item-form input {
+    outline: none;
+    border: 1px solid #ced4da;
+    background: white;
+    border-radius: 0.25em;
+    padding: 0.5em 1em;
+    color: #495057;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.new-item-form input:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.header {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+    list-style: none;
+}
+
+.list li:has(input:checked) label {
+    color: #6c757d;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.list li label {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+.list li:has(input:focus-visible) label {
+    outline: 1px solid #80bdff;
+}
+
+.list li input {
+    outline: none;
+    width: 0;
+    height: 0;
+    appearance: none;
+    pointer-events: none;
+    position: absolute;
+}
+
+.list li label::before {
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: #6c757d;
+    border-radius: 0.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list li label:hover::before {
+    background: #5a6268;
+}
+
+.list li:has(input:checked) label::before {
+    content: "✔";
+    background: #28a745;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.list li:has(input:checked) label:hover::before {
+    background: #218838;
+}
+
+
+.list li .btn.btn-danger {
+    display: none;
+}
+
+
+.list li:hover .btn.btn-danger {
+    display: block;
+}
+
+.TaskText {
+    font-size: 55px;
+}
+
+.borrar-todo {
+    margin-top: 6rem;
+    background: #28313b;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.borrar-todo:hover {
+    background: #7c4039;
+    font-size: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  label {
+    color: #ff69b4;
+  }
