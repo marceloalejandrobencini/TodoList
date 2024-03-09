@@ -12,25 +12,22 @@ code {
     monospace;
 }
 
-/* styles.css */
-
-/* Estilos para el contenedor principal de la aplicación */
 .App {
-  text-align: center; /* Centrar el contenido */
+  text-align: center; 
 }
 
-/* Estilos para el título "TODOS" */
+
 .App-header h1 {
-  color: #ff69b4; /* Color rosa */
-  margin-bottom: 20px; /* Espacio inferior */
+  color: #ff69b4; 
+  margin-bottom: 20px; 
 }
 
-/* Estilos para el contenedor de las tareas */
+
 .todo-list {
-  max-width: 400px; /* Ancho máximo del contenedor */
-  margin: 0 auto; /* Centrar horizontalmente */
-  border: 2px solid #ccc; /* Borde gris */
-  border-radius: 8px; /* Bordes redondeados */
-  padding: 20px; /* Espaciado interno */
+  max-width: 400px; 
+  margin: 0 auto; 
+  border: 2px solid #ccc; 
+  border-radius: 8px; 
+  padding: 20px; 
 }
 

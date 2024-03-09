@@ -1,12 +1,12 @@
-import { TodoItem } from "./TodoItem"; // Importa la función TodoItem de forma nombrada
+import { TodoItem } from "./TodoItem"; 
 import React from "react";
-import "./App.css"; // Importa los estilos CSS
+import "./App.css"; 
 
 export function TodoList({ todos = [], toggleTodo, deleteTodo }) {
   return (
     <div className="container">
   
-      {todos.length === 0 && "No hay Todos"}
+      {todos.length === 0 && "No hay Tareas"}
       {todos.map((todo) => {
         return (
           <div className="task-post-it" key={todo.id}>
